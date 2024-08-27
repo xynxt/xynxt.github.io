@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>awekening</title>
+    <link rel="stylesheet" href="assets/estilos/style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#team-section">Team</a>
+        <a href="https://discord.gg/villeros" target="_blank">Discord</a>
+    </div>
+
+    <div id="home" class="section">
+        <h1>Awekening</h1>
+        <p>Una comunidad hispana de discord la cual tiene varias dedicaciones, te dejo un poco de nuestra información aquí debajo</p>
+        <p>Nacimos en 2020, fundada por Rojas y por Bliss. Empezamos como una squad, luego de varias generaciones que tuvó nuestra Squad, decidimos dejar de ser una mas, así que pasamos de ser AwekeningSquad, a ser Awekening, una comúnidad "raider", aunque no nos dedicamos a eso solamente.</p>
+        <p>No olvides unirte a nuestro <a href="https://discord.gg/villeros" target="_blank">Discord</a></p>
+    </div>
+
+    <div id="team-section" class="section">
+        <h2>Awekening</h2>
+        <div class="team-cards">
+            <div class="card">
+                <img src="https://i.makeagif.com/media/4-09-2022/PP7tYm.gif" alt="Miembro 1">
+                <h3>Bliss</h3>
+                <p>Founder, desarrollador de Awekening y fumador compulsivo</p>
+            </div>
+            <div class="card">
+                <img src="https://images-ext-1.discordapp.net/external/ueshn9w2FyW8cHnqbrrW75dAP77JRsQQpee6nZmWi8E/%3Fsize%3D1024/https/cdn.discordapp.com/icons/1057720116214763581/657311c86d5c4a62b4ee8f57a6ae294a.png?format=webp&quality=lossless&width=405&height=405" alt="Miembro 2">
+                <h3>Rojas</h3>
+                <p>Founder, putita de bliss</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1277019326507126794/1277798510283980921/IMG_3154.gif?ex=66ce7a19&is=66cd2899&hm=39e3aeddade0542e0be67bd5cc4d8ac3675449bc971a0c4b024e8eb8f7e261a6&=&width=405&height=405" alt="Miembro 3">
+                <h3>Itz_Awe</h3>
+                <p>OG Member & Moderador de Awekening</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1277019326507126794/1277791238795563143/Ragna_kills_Grymwelte_with_a_finger_flink.gif?ex=66ce7353&is=66cd21d3&hm=ce7162de4ead40215eb7e642498a433b3648911599c48db23f6d3a4bf393d6d7&=" alt="Miembro 4">
+                <h3>Lxgit</h3>
+                <p>Desarrollador de Awekening y puta de bliss.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1277786017201393744/1277793277118251018/3efc6e4c3f9c02dfbe0cc7d79b4fab85.jpg?ex=66ce7539&is=66cd23b9&hm=fe2dfeb7cf8f7fd630e9607585b24566af18741d07ccc849c2d11ad24a9b4ecc&=&format=webp&width=412&height=405" alt="Miembro 5">
+                <h3>sqvage</h3>
+                <p>pendejo de 14 años con complejo de trapper yankee</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1277786017201393744/1277787178608361618/Black_and_Gold_Vintage_Luxury_Creative_Jewerly_Logo_20240821_192308_0000.png?ex=66ce6f8b&is=66cd1e0b&hm=49fc94f7cf8d6af643666d4ee3717a9d7a93248e67ffffca78e1019820aa876f&=&format=webp&quality=lossless&width=405&height=405" alt="Miembro 6">
+                <h3>Mario</h3>
+                <p>Awekening Member</p>
+            </div>
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1277019326507126794/1277795964320481301/Ski_Mask_GIF_-_Ski_Mask_Skimask_-_Discover__Share_GIFs.gif?ex=66ce77ba&is=66cd263a&hm=e6020c1af04d4fbef301304a0500f111b2671138bb4b79a65fecac4c466c0be1&=" alt="Miembro 7">
+                <h3>Assazaineaskq</h3>
+                <p>"Results speak louder than intentions; success is not declared, it's proven, because true power lies in what you do, not what you say." </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const teamSection = document.querySelector("#team-section");
+        const teamCards = document.querySelector(".team-cards");
+
+        window.addEventListener("scroll", function() {
+            const sectionPos = teamSection.getBoundingClientRect().top;
+            const screenPos = window.innerHeight / 1.3;
+
+            if (sectionPos < screenPos) {
+                teamCards.classList.add("visible");
+            }
+        });
+    });
+</script>
+</html>
